@@ -1,7 +1,6 @@
 ---
-title: 小视频SDK集成指南
-categories:  SDK
-description: 你对本页的描述
+title: 小视频SDK集成指南        
+categories:  SDK                     
 ---
 
 ![][1]
