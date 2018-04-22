@@ -2,7 +2,7 @@
 title:  Android技术周报 第1期
 categories:  Andoird技术周报         
 ---
-![image.png-285.4kB][1]
+![][1]
 
 ## 新闻
 
