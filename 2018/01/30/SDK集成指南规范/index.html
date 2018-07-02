@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>小视频SDK集成指南 | xinmei</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="" />
+    
+    <meta name="description" content="你对本页的描述">
+<meta property="og:type" content="article">
+<meta property="og:title" content="小视频SDK集成指南">
+<meta property="og:url" content="http://yoursite.com/2018/01/30/SDK集成指南规范/index.html">
+<meta property="og:site_name" content="xinmei">
+<meta property="og:description" content="你对本页的描述">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://static.zybuluo.com/darren6/5xquvbieqa2lb8co4bdr6jhd/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20171113132910.png">
+<meta property="og:updated_time" content="2018-01-30T10:36:14.883Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="小视频SDK集成指南">
+<meta name="twitter:description" content="你对本页的描述">
+<meta name="twitter:image" content="http://static.zybuluo.com/darren6/5xquvbieqa2lb8co4bdr6jhd/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20171113132910.png">
+    
+
+    
+        <link rel="alternate" href="/" title="xinmei" type="application/atom+xml" />
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.0.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">新媒传信Android团队</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">主页</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Andoird技术周报/">Andoird技术周报</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/SDK/">SDK</a></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">关于</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <div class="search-form">
+        <input type="text" class="st-default-search-input search-form-input" placeholder="搜索" />
+    </div>
+    <script type="text/javascript">
+(function(w,d,t,u,n,s,e) {w['SwiftypeObject']=n;w[n]=w[n]||function() {
+(w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+})(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+_st('install','LqkijdWwEgCKGnDQ7Zng','2.0.0');
+</script>
+<style>
+    .st-ui-injected-overlay-container,
+    .st-ui-injected-overlay-container *:not(select) {
+        font-family: inherit !important;
+    }
+    section.st-ui-content.st-search-results a.st-ui-result .st-ui-type-heading {
+        color: #006bde !important;
+    }
+    .st-ui-injected-overlay-container .st-ui-header input[type="text"]:focus {
+        border-bottom: 2px solid #006bde;
+    }
+    .st-ui-injected-overlay-container .st-ui-footer a.st-ui-pagination-link {
+        color: #006bde;
+    }
+    .st-ui-injected-overlay-container .st-ui-footer a.st-ui-pagination-link span.st-ui-arrow {
+        border-color: #006bde;
+    }
+</style>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/SDK/">SDK</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-SDK集成指南规范" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        小视频SDK集成指南
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2018/01/30/SDK集成指南规范/" class="article-date">
+            <time datetime="2018-01-30T10:36:14.883Z" itemprop="datePublished">2018-01-30</time>
+        </a>
+    </div>
+
+                
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p><img src="http://static.zybuluo.com/darren6/5xquvbieqa2lb8co4bdr6jhd/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20171113132910.png" alt=""></p>
+<h5 id="版本要求"><a href="#版本要求" class="headerlink" title="版本要求"></a>版本要求</h5><p>Android支持4.0及以上。</p>
+<h5 id="开发环境配置"><a href="#开发环境配置" class="headerlink" title="开发环境配置"></a>开发环境配置</h5><p>本SDK开发环境为Android Studio|buildToolsVersion 25|JDK 1.8。</p>
+<h5 id="SDK资源介绍"><a href="#SDK资源介绍" class="headerlink" title="SDK资源介绍"></a>SDK资源介绍</h5><p>SDK包括videosdk-1.0.aar文件。</p>
+<h5 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h5><ul>
+<li><h6 id="导入SDK"><a href="#导入SDK" class="headerlink" title="导入SDK"></a>导入SDK</h6><p>使用时只需要将.aar文件放入项目libs文件夹中即可。</p>
+</li>
+</ul>
+<ul>
+<li><h6 id="接入"><a href="#接入" class="headerlink" title="接入"></a>接入</h6><p>使用aar：aar 文件放入引用Module的libs目录下，gradle配置文件中把libs 目录放入依赖：</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">repositories&#123;</span><br><span class="line">      flatDir&#123;</span><br><span class="line">      dirs <span class="string">'libs'</span></span><br><span class="line">      &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在gradle文件中使用依赖的方式引用aar：</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">compile(name:<span class="string">'xxx'</span>,ext:<span class="string">'aar'</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li><h6 id="添加配置"><a href="#添加配置" class="headerlink" title="添加配置"></a>添加配置</h6><p>设置AndroidManifest.xml文件，声明使用权限(必须)</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;!<span class="comment">-- 拍照 --&gt;</span></span><br><span class="line">&lt;uses-permission android:name=<span class="string">"android.permission.CAMERA"</span> /&gt;</span><br><span class="line">&lt;!<span class="comment">-- 录音 --&gt;</span></span><br><span class="line">&lt;uses-permission android:name=<span class="string">"android.permission.RECORD_AUDIO"</span> /&gt;</span><br><span class="line">&lt;!<span class="comment">-- 防止设备休眠 --&gt;</span></span><br><span class="line">&lt;uses-permission android:name=<span class="string">"android.permission.WAKE_LOCK"</span> /&gt;</span><br><span class="line">&lt;!<span class="comment">-- 修改/删除 SD 卡中的内容 --&gt;</span></span><br><span class="line">&lt;uses-permission android:name=<span class="string">"android.permission.WRITE_EXTERNAL_STORAGE"</span> /&gt;</span><br><span class="line">&lt;uses-permission android:name=<span class="string">"android.permission.MODIFY_AUDIO_SETTINGS"</span> /&gt;</span><br></pre></td></tr></table></figure>
+<p>在gradle文件中使用依赖的方式引用v7包</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">compile <span class="string">'com.android.support:appcompat-v7:25.2.0'</span></span><br></pre></td></tr></table></figure>
+<p>v7版本根据项目中的buildToolsVersion做出对应的调整，比如本SDK用的是buildToolsVersion “25.0.3”。</p>
+</li>
+</ul>
+<ul>
+<li><h6 id="录制小视频"><a href="#录制小视频" class="headerlink" title="录制小视频"></a>录制小视频</h6><p>小视频的录制主要是基于fragment实现，需要在项目录制小视频的入口处添加对fragment的引用。录制主要分为以下步骤进行操作：</p>
+<ol>
+<li><p>录制视频界面为Fragment,因此当前Acitivity 需要继承FragmentActivity（必须）；</p>
+</li>
+<li><p>首先在需要展示的Activity的Layout中添加一下布局，用于加载录制小视频Fragment的容器；</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;LinearLayout</span><br><span class="line">    	android:id=<span class="string">"@+id/layout_record_video_view"</span></span><br><span class="line">    	android:layout_width=<span class="string">"match_parent"</span></span><br><span class="line">    	android:layout_height=<span class="string">"match_parent"</span></span><br><span class="line">    	android:background=<span class="string">"#000000"</span></span><br><span class="line">    	android:clickable=<span class="string">"true"</span></span><br><span class="line">    	android:orientation=<span class="string">"vertical"</span></span><br><span class="line">    	android:visibility=<span class="string">"gone"</span></span><br><span class="line">/&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在Activity中找到上述View</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">View mRecordVideoView = findViewById(R.id.layout_record_video_view);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打开录制小视频的界面</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">rivate String[] permissions = &#123;</span><br><span class="line">        Manifest.permission.READ_EXTERNAL_STORAGE,</span><br><span class="line">        Manifest.permission.WRITE_EXTERNAL_STORAGE,</span><br><span class="line">        Manifest.permission.CAMERA,</span><br><span class="line">        Manifest.permission.RECORD_AUDIO</span><br><span class="line">&#125;;</span><br><span class="line">//首先判断权限</span><br><span class="line">ArrayList&lt;String&gt; list = checker.lacksPermissions(permissions);</span><br><span class="line">boolean isLack = list.size() &gt; <span class="number">0</span> ? <span class="literal">true</span> : <span class="literal">false</span>;</span><br><span class="line"><span class="keyword">if</span> (isLack) &#123;</span><br><span class="line">    checker.requestPermission(MainActivity.this, permissions, <span class="number">3</span>);</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    mRecordVideoView.setVisibility(View.VISIBLE);</span><br><span class="line">//参数FragmentActivity 为当前activity;参数containerViewId为第二步添加Fragment的容器View</span><br><span class="line">    VideoManager.getInstance().addRecordeVideoFragment(FragmentActivity.this, R.id.layout_record_video_view);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重写权限回调</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">@Override</span><br><span class="line">public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) &#123;</span><br><span class="line">    super.onRequestPermissionsResult(requestCode, permissions, grantResults);</span><br><span class="line">    <span class="keyword">if</span> (requestCode == <span class="number">3</span> &amp;&amp; checker.hasAllPermissionsGranted(grantResults)) &#123;</span><br><span class="line">       	mRecordVideoView.setVisibility(View.VISIBLE);</span><br><span class="line">		//参数FragmentActivity 为当前activity;参数containerViewId为第二步添加Fragment的容			器View</span><br><span class="line">    	VideoManager.getInstance().addRecordeVideoFragment(MainActivity.this, 				R.id.layout_record_video_view);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>小视频录制完成回调</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> VideoManager.getInstance().setVideoRecordListener(new IVideoRecordListener() &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void onVideoRecordSuccess(Attachment attachment) &#123;</span><br><span class="line">        mRecordVideoView.setVisibility(View.GONE);</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void onVideoRecordFailed() &#123;</span><br><span class="line">        mRecordVideoView.setVisibility(View.GONE);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+</ul>
+<p>Attachment 字段解释：</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>videoPath</td>
+<td>视频存储地址</td>
+</tr>
+<tr>
+<td>videoThumbPath</td>
+<td>视频缩略图存储地址</td>
+</tr>
+<tr>
+<td>width</td>
+<td>视频宽</td>
+</tr>
+<tr>
+<td>height</td>
+<td>视频高</td>
+</tr>
+<tr>
+<td>duration</td>
+<td>视频时长</td>
+</tr>
+<tr>
+<td>bitrate</td>
+<td>视频比特率</td>
+</tr>
+<tr>
+<td>size</td>
+<td>视频大小</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><p>在当前Activity重写OnKeyDown()方法，在录制视频点击返回键时，回到当前Activity</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">@Override</span><br><span class="line">public boolean onKeyDown(int keyCode, KeyEvent event) &#123;</span><br><span class="line">    <span class="keyword">if</span> (keyCode == KeyEvent.KEYCODE_BACK) &#123;</span><br><span class="line">        <span class="keyword">if</span> (VideoManager.getInstance().isVideoRecording()) &#123;</span><br><span class="line">            //如果正在录制视频，删除fragment</span><br><span class="line">            mRecordVideoView.setVisibility(View.GONE);</span><br><span class="line">            VideoManager.getInstance().removeRecordeVideoFragment(MainActivity.this);</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> super.onKeyDown(keyCode, event);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ul>
+<li><p>播放小视频</p>
+<ol>
+<li><p>在小窗口中播放录制好的小视频，比如在列表中播放，需要在适配器布局中引用SmartVideoView。    </p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;cn.com.fetion.video.play.SmartVideoView</span><br><span class="line">    	android:id=<span class="string">"@+id/view_smart_video_play"</span></span><br><span class="line">    	android:layout_width=<span class="string">"192dp"</span></span><br><span class="line">    	android:layout_height=<span class="string">"144dp"</span></span><br><span class="line">    	android:visibility=<span class="string">"visible"</span> /&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>SmartVideoView的使用</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">SmartVideoView mVideo = (SmartVideoView) view.findViewById(R.id.view_smart_video_play);</span><br><span class="line">mVideo.setPath(videoPath);</span><br><span class="line">mVideo.setVisibility(View.VISIBLE);</span><br><span class="line">mVideo.startPlay(<span class="literal">true</span>, new SmartVideoView.SmartVideoPlayListener() &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public boolean onPlayStart() &#123;</span><br><span class="line">		//开始播放</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void onPlayReStart() &#123;</span><br><span class="line">		//准备播放</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void onPlayError(Exception e) &#123;</span><br><span class="line">		//播放失败</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void onPlayFinish() &#123;</span><br><span class="line">		//播放完成</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+</ul>
+<h5 id="数据比对"><a href="#数据比对" class="headerlink" title="数据比对"></a>数据比对</h5><table>
+<thead>
+<tr>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">大小</th>
+<th style="text-align:center">录制时长(s)</th>
+<th style="text-align:center">宽度</th>
+<th style="text-align:center">高度</th>
+<th style="text-align:center">数据速率</th>
+<th style="text-align:center">总比特率</th>
+<th style="text-align:center">帧速率(帧/s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">SDK</td>
+<td style="text-align:center">411KB</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">320</td>
+<td style="text-align:center">240</td>
+<td style="text-align:center">505</td>
+<td style="text-align:center">556</td>
+<td style="text-align:center">25</td>
+</tr>
+<tr>
+<td style="text-align:center">密友圈</td>
+<td style="text-align:center">33.4MB</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">2160</td>
+<td style="text-align:center">3840</td>
+<td style="text-align:center">46153</td>
+<td style="text-align:center">46259</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">和飞信</td>
+<td style="text-align:center">205KB</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">240</td>
+<td style="text-align:center">320</td>
+<td style="text-align:center">156</td>
+<td style="text-align:center">257</td>
+<td style="text-align:center">29</td>
+</tr>
+<tr>
+<td style="text-align:center">微信</td>
+<td style="text-align:center">888.9KB</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">544</td>
+<td style="text-align:center">966</td>
+<td style="text-align:center">1326</td>
+<td style="text-align:center">1394</td>
+<td style="text-align:center">29</td>
+</tr>
+</tbody>
+</table>
+<p>  注：比特率影响的是视频的大小和质量</p>
+<h5 id="录制视频参数"><a href="#录制视频参数" class="headerlink" title="录制视频参数"></a>录制视频参数</h5><p>  视频分辨率：320 * 240</p>
+<p>  比特率：400</p>
+<p>  帧率 ：25帧/s</p>
+<p>  视频输出格式：MediaRecorder.OutputFormat.AAC_ADTS</p>
+<p>  音频率：AudioSource.MIC</p>
+<p>  音频录制格式 ：MediaRecorder.AudioEncoder.AAC</p>
+<p>  音频频道 ：2 (立体声)</p>
+<p>  音频比特率：44100</p>
+
+        </div>
+        <footer class="article-footer">
+            
+    <div class="jiathis_style">
+    <span class="jiathis_txt">分享到：</span>
+    <a class="jiathis_button_qzone">QQ空间</a>
+    <a class="jiathis_button_tsina">新浪微博</a>
+    <a class="jiathis_button_tqq">腾讯微博</a>
+    <a class="jiathis_button_weixin">微信</a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+    <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<style>
+    .jiathis_style div:first-child:not(.jiadiv_01) {
+        width: auto !important;
+        border: none !important;
+    }
+    .jiathis_style .jiadiv_01 {
+        margin: 10px 0;
+        border-radius: 4px;
+        border: #e1e1e1 solid 1px;
+    }
+    .jiathis_style .jiadiv_01 div:first-child {
+        display: none;
+    }
+    .jiathis_style .jiadiv_02 {
+        padding: 7px 0 !important;
+    }
+    .jiathis_style .jiadiv_02 .jiatitle {
+        width: 85px;
+        border: none;
+        height: auto;
+        margin: 3px 10px;
+        padding: 6px 10px;
+        border-radius: 4px;
+    }
+    .jiathis_style .jiadiv_02 .jiatitle:hover {
+        border: none;
+    }
+    .jiathis_style .jiadiv_02 .jiatitle:nth-child(even) {
+        margin-left: 0;
+    }
+    .jiathis_style .jtico:hover {
+        opacity: 1;
+    }
+    .jiathis_style .ckepopBottom,
+    .jiathis_style .centerBottom {
+        width: auto !important;
+        padding: 5px;
+        background: #f7f7f7;
+    }
+</style>
+
+
+
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="uyan_frame"></div>
+
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>关注我 :</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="twitter" href="/" target="_blank">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="/" target="_blank">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="google-plus" href="/" target="_blank">
+                        <i class="icon fa fa-google-plus"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/" target="_blank">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2018/03/19/Android技术周报 第2期/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">下一篇</strong>
+        <p class="article-nav-title">
+        
+            Android技术周报 第2期
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/06/25/Android技术周报 第12期/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://static.zybuluo.com/darren6/pfalbj5gcfpmxuw8t4b2ocm5/image.png)" alt="Android技术周报 第11期" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Andoird技术周报/">Andoird技术周报</a></p>
+                            <p class="item-title"><a href="/2018/06/25/Android技术周报 第12期/" class="title">Android技术周报 第11期</a></p>
+                            <p class="item-date"><time datetime="2018-06-25T10:25:42.000Z" itemprop="datePublished">2018-06-25</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/06/25/Android技术周报 第11期/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://static.zybuluo.com/darren6/40adbup7bsr79pzektjmaj3b/image.png)" alt="Android技术周报 第11期" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Andoird技术周报/">Andoird技术周报</a></p>
+                            <p class="item-title"><a href="/2018/06/25/Android技术周报 第11期/" class="title">Android技术周报 第11期</a></p>
+                            <p class="item-date"><time datetime="2018-06-25T09:49:20.000Z" itemprop="datePublished">2018-06-25</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/05/18/Android技术周报 第10期/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://static.zybuluo.com/darren6/40adbup7bsr79pzektjmaj3b/image.png)" alt="Android技术周报 第10期" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Andoird技术周报/">Andoird技术周报</a></p>
+                            <p class="item-title"><a href="/2018/05/18/Android技术周报 第10期/" class="title">Android技术周报 第10期</a></p>
+                            <p class="item-date"><time datetime="2018-05-18T08:53:02.000Z" itemprop="datePublished">2018-05-18</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/05/11/Android技术周报 第9期 /" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://static.zybuluo.com/darren6/wmzcucd0pej9x9abregeq33f/p.gif)" alt="Android技术周报 第9期" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Andoird技术周报/">Andoird技术周报</a></p>
+                            <p class="item-title"><a href="/2018/05/11/Android技术周报 第9期 /" class="title">Android技术周报 第9期</a></p>
+                            <p class="item-date"><time datetime="2018-05-11T11:07:06.000Z" itemprop="datePublished">2018-05-11</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/05/04/Android技术周报 第8期/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://s1.dgtle.com/forum/201805/03/092326ivuzu2mtyttyzutw.gif?imageView2/2/w/1200/q/100)" alt="Android技术周报 第8期" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Andoird技术周报/">Andoird技术周报</a></p>
+                            <p class="item-title"><a href="/2018/05/04/Android技术周报 第8期/" class="title">Android技术周报 第8期</a></p>
+                            <p class="item-date"><time datetime="2018-05-04T09:22:52.000Z" itemprop="datePublished">2018-05-04</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Andoird技术周报/">Andoird技术周报</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SDK/">SDK</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">一月 2018</a><span class="archive-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+
+            
+                
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">链接</h3>
+        <div class="widget">
+            <ul>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2018 Darren</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2148840"></script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
