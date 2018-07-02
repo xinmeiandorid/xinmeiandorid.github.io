@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>Android技术周报 第10期 | xinmei</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="" />
+    
+    <meta name="description" content="Android动态 加速 Android 新版本的广泛使用，我们来聊聊 Project Treble  正式发布Android Things 1.0 Android P状态栏改为仅显示4个通知图标：为刘海屏让路 Android P 应用将悄悄崩溃而不是弹出对话框 Google I/O 2018：Android 中的新功能  国内新闻 传淘宝将推出短视频独立App对抗抖音：预计6月初上线 全国铁路">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android技术周报 第10期">
+<meta property="og:url" content="http://yoursite.com/2018/05/18/Android技术周报 第10期/index.html">
+<meta property="og:site_name" content="xinmei">
+<meta property="og:description" content="Android动态 加速 Android 新版本的广泛使用，我们来聊聊 Project Treble  正式发布Android Things 1.0 Android P状态栏改为仅显示4个通知图标：为刘海屏让路 Android P 应用将悄悄崩溃而不是弹出对话框 Google I/O 2018：Android 中的新功能  国内新闻 传淘宝将推出短视频独立App对抗抖音：预计6月初上线 全国铁路">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://static.zybuluo.com/darren6/40adbup7bsr79pzektjmaj3b/image.png">
+<meta property="og:updated_time" content="2018-05-18T08:53:02.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Android技术周报 第10期">
+<meta name="twitter:description" content="Android动态 加速 Android 新版本的广泛使用，我们来聊聊 Project Treble  正式发布Android Things 1.0 Android P状态栏改为仅显示4个通知图标：为刘海屏让路 Android P 应用将悄悄崩溃而不是弹出对话框 Google I/O 2018：Android 中的新功能  国内新闻 传淘宝将推出短视频独立App对抗抖音：预计6月初上线 全国铁路">
+<meta name="twitter:image" content="http://static.zybuluo.com/darren6/40adbup7bsr79pzektjmaj3b/image.png">
+    
+
+    
+        <link rel="alternate" href="/" title="xinmei" type="application/atom+xml" />
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.0.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">新媒传信Android团队</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">主页</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Andoird技术周报/">Andoird技术周报</a></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">关于</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <div class="search-form">
+        <input type="text" class="st-default-search-input search-form-input" placeholder="搜索" />
+    </div>
+    <script type="text/javascript">
+(function(w,d,t,u,n,s,e) {w['SwiftypeObject']=n;w[n]=w[n]||function() {
+(w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+})(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+_st('install','LqkijdWwEgCKGnDQ7Zng','2.0.0');
+</script>
+<style>
+    .st-ui-injected-overlay-container,
+    .st-ui-injected-overlay-container *:not(select) {
+        font-family: inherit !important;
+    }
+    section.st-ui-content.st-search-results a.st-ui-result .st-ui-type-heading {
+        color: #006bde !important;
+    }
+    .st-ui-injected-overlay-container .st-ui-header input[type="text"]:focus {
+        border-bottom: 2px solid #006bde;
+    }
+    .st-ui-injected-overlay-container .st-ui-footer a.st-ui-pagination-link {
+        color: #006bde;
+    }
+    .st-ui-injected-overlay-container .st-ui-footer a.st-ui-pagination-link span.st-ui-arrow {
+        border-color: #006bde;
+    }
+</style>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/Andoird技术周报/">Andoird技术周报</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-Android技术周报 第10期" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        Android技术周报 第10期
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2018/05/18/Android技术周报 第10期/" class="article-date">
+            <time datetime="2018-05-18T08:53:02.000Z" itemprop="datePublished">2018-05-18</time>
+        </a>
+    </div>
+
+                
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p><img src="http://static.zybuluo.com/darren6/40adbup7bsr79pzektjmaj3b/image.png" alt=""></p>
+<h2 id="Android动态"><a href="#Android动态" class="headerlink" title="Android动态"></a>Android动态</h2><ol>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzAwODY4OTk2Mg==&amp;mid=2652046265&amp;idx=1&amp;sn=401d9293fd0c5ecdf3e05f62a7006a72&amp;chksm=808ca3fcb7fb2aea726a4e12990e4595b43884fafddf021c372ac74cdb56a1cf638df5b9f579&amp;mpshare=1&amp;scene=1&amp;srcid=0518iYxsNV8xSaAvIHd7j8lj#rd" target="_blank" rel="noopener">加速 Android 新版本的广泛使用，我们来聊聊 Project Treble</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzAwODY4OTk2Mg==&amp;mid=2652046253&amp;idx=1&amp;sn=4369fc9438ec918ea880f20ea66c1dbd&amp;chksm=808ca3e8b7fb2afe5aa99b3a76395f2d765da4c7fdbb1e32f667f0efb74e7436be9fd0c65473&amp;mpshare=1&amp;scene=1&amp;srcid=0518021U7VHRpuaGEuUmMk94#rd" target="_blank" rel="noopener"> 正式发布Android Things 1.0</a></li>
+<li><a href="https://www.cnbeta.com/articles/soft/726879.htm" target="_blank" rel="noopener">Android P状态栏改为仅显示4个通知图标：为刘海屏让路</a></li>
+<li><a href="https://www.cnbeta.com/articles/tech/726141.htm" target="_blank" rel="noopener">Android P 应用将悄悄崩溃而不是弹出对话框</a></li>
+<li><a href="https://developers.googleblog.cn/2018/05/google-io-2018android.html" target="_blank" rel="noopener">Google I/O 2018：Android 中的新功能</a></li>
+</ol>
+<h2 id="国内新闻"><a href="#国内新闻" class="headerlink" title="国内新闻"></a>国内新闻</h2><ol>
+<li><a href="http://tech.sina.com.cn/i/2018-05-18/doc-ihaturfs0854851.shtml" target="_blank" rel="noopener">传淘宝将推出短视频独立App对抗抖音：预计6月初上线</a></li>
+<li><a href="http://tech.qq.com/a/20180518/023939.htm" target="_blank" rel="noopener">全国铁路首次实现“刷手机”进站 广深城际全线推出银联闪付乘车</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzI4ODUxNTczMA==&amp;mid=2247489753&amp;idx=1&amp;sn=3664fecd54c45e59f0850e87e9af8bfb&amp;chksm=ec3c6b24db4be23281a6fbf03606a0c742f320e7c02fcc4837626f027107962bde496af3ad96&amp;mpshare=1&amp;scene=1&amp;srcid=0518CgwFdMEhbNuOmPkaJw7Y#rd" target="_blank" rel="noopener">微信分享功能大调整：小程序、App、公众号、H5 将全面受限</a></li>
+</ol>
+<h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><ol>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzUxODQ3MTk5Mg==&amp;mid=2247483950&amp;idx=1&amp;sn=1d996a731c4a42b6a44d05f7c54df06a&amp;chksm=f9892a79cefea36f42e92877289ceb623708baa47a4c7d6046aca2fe2e0aae8673aeaf9eaa23&amp;mpshare=1&amp;scene=1&amp;srcid=05121OvweVozLLPGHVZk1qXC#rd" target="_blank" rel="noopener">RePlugin中如何打开插件中的自定义进程Activity</a> </li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzI2NzIxNTI5Mw==&amp;mid=2247483718&amp;idx=1&amp;sn=8493304e78e3465a8460c56ef774093b&amp;chksm=ea830994ddf4808243ccdcd13aaba7ff5db6a9984c6f5af1756f63af9afc2bd3832021c19d41&amp;mpshare=1&amp;scene=1&amp;srcid=0513KO64PCP9EEfpSTkYvDhd#rd" target="_blank" rel="noopener">SimpleDraweeView was not initialized异常引出的一个问题</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzAwODY4OTk2Mg==&amp;mid=2652046257&amp;idx=1&amp;sn=f31f960ad340b2514d81d6252ada2ed5&amp;chksm=808ca3f4b7fb2ae2ca056817c28fddf3cd5345b4c34be38609a2bfdd3e8c6ebe9527b2e1d073&amp;mpshare=1&amp;scene=1&amp;srcid=0518kIQnUkyYlMcMtbszMsHb#rd" target="_blank" rel="noopener">Android Jetpack 助推应用开发 | 中文字幕视频介绍</a></li>
+<li><a href="https://blog.darkness463.top/2018/05/04/Android-Virtual-Check/?utm_source=androidweekly&amp;utm_medium=website" target="_blank" rel="noopener">Android多开/分身检测</a></li>
+<li><a href="https://juejin.im/post/5af296226fb9a07a9a10d6f1?utm_source=androidweekly&amp;utm_medium=website" target="_blank" rel="noopener">Google I/O 2018 之后，Android 工程师将何去何从？</a></li>
+</ol>
+<h2 id="技术文章推荐"><a href="#技术文章推荐" class="headerlink" title="技术文章推荐"></a>技术文章推荐</h2><ol>
+<li><a href="https://juejin.im/post/5af4aa91f265da0b8d41f714" target="_blank" rel="noopener">新架构组件: WorkManager</a></li>
+<li><a href="https://blog.csdn.net/rolan1993/article/details/78801052/" target="_blank" rel="noopener">手把手教你实现小程序中的自定义组件</a></li>
+<li><a href="https://www.jianshu.com/p/a620e368389a" target="_blank" rel="noopener">Android动态加载之ClassLoader详解</a></li>
+<li><a href="https://blog.csdn.net//lyhhj/article/details/49517537" target="_blank" rel="noopener">Android 拦截WebView加载URL，控制其加载CSS、JS资源</a></li>
+<li><a href="https://blog.csdn.net//lyhhj/article/details/49517537" target="_blank" rel="noopener">再一次梳理Android的消息机制</a></li>
+</ol>
+
+        </div>
+        <footer class="article-footer">
+            
+    <div class="jiathis_style">
+    <span class="jiathis_txt">分享到：</span>
+    <a class="jiathis_button_qzone">QQ空间</a>
+    <a class="jiathis_button_tsina">新浪微博</a>
+    <a class="jiathis_button_tqq">腾讯微博</a>
+    <a class="jiathis_button_weixin">微信</a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+    <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<style>
+    .jiathis_style div:first-child:not(.jiadiv_01) {
+        width: auto !important;
+        border: none !important;
+    }
+    .jiathis_style .jiadiv_01 {
+        margin: 10px 0;
+        border-radius: 4px;
+        border: #e1e1e1 solid 1px;
+    }
+    .jiathis_style .jiadiv_01 div:first-child {
+        display: none;
+    }
+    .jiathis_style .jiadiv_02 {
+        padding: 7px 0 !important;
+    }
+    .jiathis_style .jiadiv_02 .jiatitle {
+        width: 85px;
+        border: none;
+        height: auto;
+        margin: 3px 10px;
+        padding: 6px 10px;
+        border-radius: 4px;
+    }
+    .jiathis_style .jiadiv_02 .jiatitle:hover {
+        border: none;
+    }
+    .jiathis_style .jiadiv_02 .jiatitle:nth-child(even) {
+        margin-left: 0;
+    }
+    .jiathis_style .jtico:hover {
+        opacity: 1;
+    }
+    .jiathis_style .ckepopBottom,
+    .jiathis_style .centerBottom {
+        width: auto !important;
+        padding: 5px;
+        background: #f7f7f7;
+    }
+</style>
+
+
+
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="uyan_frame"></div>
+
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>关注我 :</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="twitter" href="/" target="_blank">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="/" target="_blank">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="google-plus" href="/" target="_blank">
+                        <i class="icon fa fa-google-plus"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/" target="_blank">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2018/06/25/Android技术周报 第11期/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">下一篇</strong>
+        <p class="article-nav-title">
+        
+            Android技术周报 第11期
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2018/05/11/Android技术周报 第9期 /" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">Android技术周报 第9期</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/06/25/Android技术周报 第12期/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://static.zybuluo.com/darren6/pfalbj5gcfpmxuw8t4b2ocm5/image.png)" alt="Android技术周报 第11期" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Andoird技术周报/">Andoird技术周报</a></p>
+                            <p class="item-title"><a href="/2018/06/25/Android技术周报 第12期/" class="title">Android技术周报 第11期</a></p>
+                            <p class="item-date"><time datetime="2018-06-25T10:25:42.000Z" itemprop="datePublished">2018-06-25</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/06/25/Android技术周报 第11期/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://static.zybuluo.com/darren6/40adbup7bsr79pzektjmaj3b/image.png)" alt="Android技术周报 第11期" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Andoird技术周报/">Andoird技术周报</a></p>
+                            <p class="item-title"><a href="/2018/06/25/Android技术周报 第11期/" class="title">Android技术周报 第11期</a></p>
+                            <p class="item-date"><time datetime="2018-06-25T09:49:20.000Z" itemprop="datePublished">2018-06-25</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/05/18/Android技术周报 第10期/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://static.zybuluo.com/darren6/40adbup7bsr79pzektjmaj3b/image.png)" alt="Android技术周报 第10期" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Andoird技术周报/">Andoird技术周报</a></p>
+                            <p class="item-title"><a href="/2018/05/18/Android技术周报 第10期/" class="title">Android技术周报 第10期</a></p>
+                            <p class="item-date"><time datetime="2018-05-18T08:53:02.000Z" itemprop="datePublished">2018-05-18</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/05/11/Android技术周报 第9期 /" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://static.zybuluo.com/darren6/wmzcucd0pej9x9abregeq33f/p.gif)" alt="Android技术周报 第9期" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Andoird技术周报/">Andoird技术周报</a></p>
+                            <p class="item-title"><a href="/2018/05/11/Android技术周报 第9期 /" class="title">Android技术周报 第9期</a></p>
+                            <p class="item-date"><time datetime="2018-05-11T11:07:06.000Z" itemprop="datePublished">2018-05-11</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/05/04/Android技术周报 第8期/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://s1.dgtle.com/forum/201805/03/092326ivuzu2mtyttyzutw.gif?imageView2/2/w/1200/q/100)" alt="Android技术周报 第8期" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Andoird技术周报/">Andoird技术周报</a></p>
+                            <p class="item-title"><a href="/2018/05/04/Android技术周报 第8期/" class="title">Android技术周报 第8期</a></p>
+                            <p class="item-date"><time datetime="2018-05-04T09:22:52.000Z" itemprop="datePublished">2018-05-04</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Andoird技术周报/">Andoird技术周报</a><span class="category-list-count">12</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a><span class="archive-list-count">4</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+
+            
+                
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">链接</h3>
+        <div class="widget">
+            <ul>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2018 Darren</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2148840"></script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>

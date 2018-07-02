@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>Android技术周报 第1期 | xinmei</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="" />
+    
+    <meta name="description" content="新闻 谷歌确认将限制Android非SDK接口使用了 Flutter beta 1 重磅发布：开发精美的原生应用 谷歌推出中文版机器学习速成课程 阿里巴巴 Android 开发手册 小插曲   Android P 开发者预览版首发！ Android P 开发者预览版新亮点 | 视频介绍  技术文章推荐 InfoQ—为什么原生应用开发者需要关注Flutter 判断应用程序在前台、后台的方法 And">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android技术周报 第1期">
+<meta property="og:url" content="http://yoursite.com/2018/03/30/Android技术周报 第1期/index.html">
+<meta property="og:site_name" content="xinmei">
+<meta property="og:description" content="新闻 谷歌确认将限制Android非SDK接口使用了 Flutter beta 1 重磅发布：开发精美的原生应用 谷歌推出中文版机器学习速成课程 阿里巴巴 Android 开发手册 小插曲   Android P 开发者预览版首发！ Android P 开发者预览版新亮点 | 视频介绍  技术文章推荐 InfoQ—为什么原生应用开发者需要关注Flutter 判断应用程序在前台、后台的方法 And">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://static.zybuluo.com/darren6/yyhzim4y3zu6h7qu7c4med1g/image.png">
+<meta property="og:updated_time" content="2018-03-30T09:11:02.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Android技术周报 第1期">
+<meta name="twitter:description" content="新闻 谷歌确认将限制Android非SDK接口使用了 Flutter beta 1 重磅发布：开发精美的原生应用 谷歌推出中文版机器学习速成课程 阿里巴巴 Android 开发手册 小插曲   Android P 开发者预览版首发！ Android P 开发者预览版新亮点 | 视频介绍  技术文章推荐 InfoQ—为什么原生应用开发者需要关注Flutter 判断应用程序在前台、后台的方法 And">
+<meta name="twitter:image" content="http://static.zybuluo.com/darren6/yyhzim4y3zu6h7qu7c4med1g/image.png">
+    
+
+    
+        <link rel="alternate" href="/" title="xinmei" type="application/atom+xml" />
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.0.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">新媒传信Android团队</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">主页</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Andoird技术周报/">Andoird技术周报</a></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">关于</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <div class="search-form">
+        <input type="text" class="st-default-search-input search-form-input" placeholder="搜索" />
+    </div>
+    <script type="text/javascript">
+(function(w,d,t,u,n,s,e) {w['SwiftypeObject']=n;w[n]=w[n]||function() {
+(w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+})(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+_st('install','LqkijdWwEgCKGnDQ7Zng','2.0.0');
+</script>
+<style>
+    .st-ui-injected-overlay-container,
+    .st-ui-injected-overlay-container *:not(select) {
+        font-family: inherit !important;
+    }
+    section.st-ui-content.st-search-results a.st-ui-result .st-ui-type-heading {
+        color: #006bde !important;
+    }
+    .st-ui-injected-overlay-container .st-ui-header input[type="text"]:focus {
+        border-bottom: 2px solid #006bde;
+    }
+    .st-ui-injected-overlay-container .st-ui-footer a.st-ui-pagination-link {
+        color: #006bde;
+    }
+    .st-ui-injected-overlay-container .st-ui-footer a.st-ui-pagination-link span.st-ui-arrow {
+        border-color: #006bde;
+    }
+</style>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/Andoird技术周报/">Andoird技术周报</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-Android技术周报 第1期" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        Android技术周报 第1期
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2018/03/30/Android技术周报 第1期/" class="article-date">
+            <time datetime="2018-03-30T09:11:02.000Z" itemprop="datePublished">2018-03-30</time>
+        </a>
+    </div>
+
+                
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p><img src="http://static.zybuluo.com/darren6/yyhzim4y3zu6h7qu7c4med1g/image.png" alt=""></p>
+<h2 id="新闻"><a href="#新闻" class="headerlink" title="新闻"></a>新闻</h2><ol>
+<li><a href="https://mp.weixin.qq.com/s/gICH9osyIzz9WerXO1C_8g?utm_source=androidweekly&amp;utm_medium=website" target="_blank" rel="noopener">谷歌确认将限制Android非SDK接口使用了</a></li>
+<li><a href="https://developers.googleblog.cn/2018/02/flutter-beta1.html?utm_source=androidweekly&amp;utm_medium=website" target="_blank" rel="noopener">Flutter beta 1 重磅发布：开发精美的原生应用</a></li>
+<li><a href="https://developers.google.cn/machine-learning/crash-course/" target="_blank" rel="noopener">谷歌推出中文版机器学习速成课程</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&amp;mid=2247486983&amp;idx=1&amp;sn=285b011807b2c31d763844d8a07a8472&amp;chksm=e9293308de5eba1ec94c7d2b3581a098ec17e2f1a7b6b58c17137cad9aa34ab9b879a3ac322b&amp;mpshare=1&amp;scene=1&amp;srcid=0309p245xrV2f3aIonr5oltt#rd" target="_blank" rel="noopener">阿里巴巴 Android 开发手册</a><ul>
+<li><a href="https://zhuanlan.zhihu.com/p/34144350" target="_blank" rel="noopener">小插曲</a></li>
+</ul>
+</li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzAwODY4OTk2Mg==&amp;mid=2652045862&amp;idx=1&amp;sn=53b5db7371e5173852005155394c4385&amp;chksm=808ca263b7fb2b75e9c677159b75857e2351af4859ca8ab35b4f5cfda3bdebfcc22d84702d6f&amp;mpshare=1&amp;scene=1&amp;srcid=0308eTgvsxFFpr3M0Zbd5a4v#rd" target="_blank" rel="noopener">Android P 开发者预览版首发！</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzAwODY4OTk2Mg==&amp;mid=2652045867&amp;idx=1&amp;sn=c32ddb9cc296b8cfcdb0596dd2a57e03&amp;chksm=808ca26eb7fb2b7807769cafec032333d61498122a998b4f8e9b8d46504b79afa188902c36dc&amp;scene=0#rd" target="_blank" rel="noopener">Android P 开发者预览版新亮点 | 视频介绍</a></li>
+</ol>
+<h2 id="技术文章推荐"><a href="#技术文章推荐" class="headerlink" title="技术文章推荐"></a>技术文章推荐</h2><ol>
+<li><a href="http://www.infoq.com/cn/news/2017/11/Why-native-app-developer-Flutter#" target="_blank" rel="noopener">InfoQ—为什么原生应用开发者需要关注Flutter</a></li>
+<li><a href="https://www.jianshu.com/p/6dc85250a13b" target="_blank" rel="noopener">判断应用程序在前台、后台的方法</a></li>
+<li><a href="http://www.cnblogs.com/hnrainll/p/4309792.html" target="_blank" rel="noopener">Android WebView Memory Leak WebView内存泄漏</a></li>
+<li><a href="https://juejin.im/post/5a98f240f265da23830a5193" target="_blank" rel="noopener">Android主项目和Module中R类的区别</a></li>
+<li><a href="https://www.jianshu.com/p/94e0f9ab3f1d" target="_blank" rel="noopener">Context都没弄明白，还怎么做Android开发？</a></li>
+<li><a href="https://kaolamobile.github.io/2017/12/10/design-an-elegant-and-powerful-android-webview-part-one/" target="_blank" rel="noopener">基于考拉电商平台的WebView实践–如何设计一个优雅健壮的Andorid Webview上</a></li>
+<li><a href="https://kaolamobile.github.io/2018/02/27/design-an-elegant-and-powerful-android-webview-part-two/" target="_blank" rel="noopener">基于考拉电商平台的WebView实践–如何设计一个优雅健壮的Andorid Webview下</a></li>
+<li><a href="http://yuqirong.me/2018/03/03/HTTPS%E5%8A%A0%E5%AF%86%E5%8E%9F%E7%90%86/" target="_blank" rel="noopener">HTTPS加密原理</a></li>
+</ol>
+
+        </div>
+        <footer class="article-footer">
+            
+    <div class="jiathis_style">
+    <span class="jiathis_txt">分享到：</span>
+    <a class="jiathis_button_qzone">QQ空间</a>
+    <a class="jiathis_button_tsina">新浪微博</a>
+    <a class="jiathis_button_tqq">腾讯微博</a>
+    <a class="jiathis_button_weixin">微信</a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+    <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<style>
+    .jiathis_style div:first-child:not(.jiadiv_01) {
+        width: auto !important;
+        border: none !important;
+    }
+    .jiathis_style .jiadiv_01 {
+        margin: 10px 0;
+        border-radius: 4px;
+        border: #e1e1e1 solid 1px;
+    }
+    .jiathis_style .jiadiv_01 div:first-child {
+        display: none;
+    }
+    .jiathis_style .jiadiv_02 {
+        padding: 7px 0 !important;
+    }
+    .jiathis_style .jiadiv_02 .jiatitle {
+        width: 85px;
+        border: none;
+        height: auto;
+        margin: 3px 10px;
+        padding: 6px 10px;
+        border-radius: 4px;
+    }
+    .jiathis_style .jiadiv_02 .jiatitle:hover {
+        border: none;
+    }
+    .jiathis_style .jiadiv_02 .jiatitle:nth-child(even) {
+        margin-left: 0;
+    }
+    .jiathis_style .jtico:hover {
+        opacity: 1;
+    }
+    .jiathis_style .ckepopBottom,
+    .jiathis_style .centerBottom {
+        width: auto !important;
+        padding: 5px;
+        background: #f7f7f7;
+    }
+</style>
+
+
+
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="uyan_frame"></div>
+
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>关注我 :</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="twitter" href="/" target="_blank">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="/" target="_blank">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="google-plus" href="/" target="_blank">
+                        <i class="icon fa fa-google-plus"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/" target="_blank">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2018/03/30/Android技术周报 第4期/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">下一篇</strong>
+        <p class="article-nav-title">
+        
+            Android技术周报 第4期
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2018/03/30/Android技术周报 第3期/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">Android技术周报 第3期</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/06/25/Android技术周报 第12期/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://static.zybuluo.com/darren6/pfalbj5gcfpmxuw8t4b2ocm5/image.png)" alt="Android技术周报 第11期" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Andoird技术周报/">Andoird技术周报</a></p>
+                            <p class="item-title"><a href="/2018/06/25/Android技术周报 第12期/" class="title">Android技术周报 第11期</a></p>
+                            <p class="item-date"><time datetime="2018-06-25T10:25:42.000Z" itemprop="datePublished">2018-06-25</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/06/25/Android技术周报 第11期/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://static.zybuluo.com/darren6/40adbup7bsr79pzektjmaj3b/image.png)" alt="Android技术周报 第11期" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Andoird技术周报/">Andoird技术周报</a></p>
+                            <p class="item-title"><a href="/2018/06/25/Android技术周报 第11期/" class="title">Android技术周报 第11期</a></p>
+                            <p class="item-date"><time datetime="2018-06-25T09:49:20.000Z" itemprop="datePublished">2018-06-25</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/05/18/Android技术周报 第10期/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://static.zybuluo.com/darren6/40adbup7bsr79pzektjmaj3b/image.png)" alt="Android技术周报 第10期" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Andoird技术周报/">Andoird技术周报</a></p>
+                            <p class="item-title"><a href="/2018/05/18/Android技术周报 第10期/" class="title">Android技术周报 第10期</a></p>
+                            <p class="item-date"><time datetime="2018-05-18T08:53:02.000Z" itemprop="datePublished">2018-05-18</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/05/11/Android技术周报 第9期 /" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://static.zybuluo.com/darren6/wmzcucd0pej9x9abregeq33f/p.gif)" alt="Android技术周报 第9期" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Andoird技术周报/">Andoird技术周报</a></p>
+                            <p class="item-title"><a href="/2018/05/11/Android技术周报 第9期 /" class="title">Android技术周报 第9期</a></p>
+                            <p class="item-date"><time datetime="2018-05-11T11:07:06.000Z" itemprop="datePublished">2018-05-11</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/05/04/Android技术周报 第8期/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://s1.dgtle.com/forum/201805/03/092326ivuzu2mtyttyzutw.gif?imageView2/2/w/1200/q/100)" alt="Android技术周报 第8期" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Andoird技术周报/">Andoird技术周报</a></p>
+                            <p class="item-title"><a href="/2018/05/04/Android技术周报 第8期/" class="title">Android技术周报 第8期</a></p>
+                            <p class="item-date"><time datetime="2018-05-04T09:22:52.000Z" itemprop="datePublished">2018-05-04</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Andoird技术周报/">Andoird技术周报</a><span class="category-list-count">12</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">五月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a><span class="archive-list-count">4</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+
+            
+                
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">链接</h3>
+        <div class="widget">
+            <ul>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2018 Darren</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2148840"></script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
